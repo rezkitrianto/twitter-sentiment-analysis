@@ -1,0 +1,12 @@
+REQUIREMENTS:
+
+- lmdb (to install lmdb, run the following command in the terminal: pip install lmdb)
+- caffe (consult the following website to install caffe -> http://caffe.berkeleyvision.org/installation.html)
+
+RUN EXPERIMENTS:
+1. Change directory to the directory where the run-1-domain.sh located.
+2. run in the terminal: "./run-1-domain.sh" to run the case of 1 domain
+3. run in the terminal: "./run-all-domain.sh" to run the case of all domain
+
+RUN SENTIMENT CLASSIFICATION ON SINGLE TWEET:
+This is the tutorial for running the program to perform sentiment analysis of single tweet

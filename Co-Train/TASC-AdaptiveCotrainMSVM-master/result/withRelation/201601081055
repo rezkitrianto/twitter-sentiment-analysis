@@ -1,0 +1,20 @@
+parameter numTopKTestData2TrainSet:	5
+parameter classifyResultThreshold:	0.5
+parameter maxIteration:	2
+parameter numTopKPrivateWord:	20
+Iteration Result:	NumTestData:	accuracy	precision	recall
+period 1	iteration 0	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	number of train data 2131	number of test data 914
+period 1	iteration 0	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 914	accuracy 59.73741794310722%	average precision 0.46707030872747984	average recall 0.47089690169780885
+period 1	iteration 0	classifier Text classifier	number of train data 2131	number of test data 914
+period 1	iteration 0	classifier Text classifier	classify result: num of test data 914	accuracy 59.73741794310722%	average precision 0.46707030872747984	average recall 0.47089690169780885
+period 1	iteration 0	classifier NONTEXT CLASSIFER	number of train data 2131	number of test data 914
+period 1	iteration 0	classifier NONTEXT CLASSIFER	classify result: num of test data 914	accuracy 62.910284463894975%	average precision 0.7044930875576036	average recall 0.3384334179491248
+period 1	iteration 1	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	number of train data 2140	number of test data 914
+period 1	iteration 1	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 914	accuracy 59.73741794310722%	average precision 0.47391513884457964	average recall 0.46589025679500734
+period 1	iteration 1	classifier Text classifier	number of train data 2140	number of test data 914
+period 1	iteration 1	classifier Text classifier	classify result: num of test data 914	accuracy 59.73741794310722%	average precision 0.47391513884457964	average recall 0.46589025679500734
+period 1	iteration 1	classifier NONTEXT CLASSIFER	number of train data 2140	number of test data 914
+period 1	iteration 1	classifier NONTEXT CLASSIFER	classify result: num of test data 914	accuracy 62.910284463894975%	average precision 0.7044930875576036	average recall 0.3384334179491248
+period 1	iteration 2	classifier FINAL(TEXT+NONTEXT) CLASSIFIER	number of train data 2145	number of test data 914
+period 1	iteration 2	classifier FINAL(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 914	accuracy 61.050328227571114%	average precision 0.5024718488028601	average recall 0.47232070587521036
+ 

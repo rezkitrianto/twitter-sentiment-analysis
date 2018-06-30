@@ -1,0 +1,454 @@
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:26) - now parsing xml file...
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:210) - parsing XML configuration file success
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:24) - Adaptivecotrain algorithm start
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:62) - parameter numTopKTestData2TrainSet:	5	parameter classifyResultThreshold:	0.5	parameter maxIteration:	2	parameter numTopKPrivateWord:	20
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:82) - dayNo 1:	test dataset, select testData to TrainDataSet
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:84) - train classifier using train data
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 1
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t0.arff
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 21:58:36 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 21:58:37 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:37 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:37 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	144.0	, and accuracy is 	0.5333333333333333
+[2016-01-04 21:58:37 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:37 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 270	53.333333333333336%	41.0	18.0	6.0	44.0	97.0	30.0	7.0	11.0	6.0
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	144.0	, and accuracy is 	0.5333333333333333
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 270	53.333333333333336%	41.0	18.0	6.0	44.0	97.0	30.0	7.0	11.0	6.0
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	127.0	, and accuracy is 	0.4703703703703704
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 270	47.03703703703704%	1.0	0.0	0.0	91.0	126.0	43.0	0.0	0.0	0.0
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 3
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 4
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 72
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 191
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 256
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 259
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 260
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 2
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t1.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	148.0	, and accuracy is 	0.5481481481481482
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 270	54.81481481481482%	46.0	19.0	7.0	38.0	96.0	30.0	8.0	11.0	5.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	148.0	, and accuracy is 	0.5481481481481482
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 270	54.81481481481482%	46.0	19.0	7.0	38.0	96.0	30.0	8.0	11.0	5.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	127.0	, and accuracy is 	0.4703703703703704
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 270	47.03703703703704%	1.0	0.0	0.0	91.0	126.0	43.0	0.0	0.0	0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 5
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 7
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 261
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 262
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word god normalized weight is 	0.0 1.0 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thread normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word post-debate normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ah normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word whoever normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pin normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tom normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word web normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drudge normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heh normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ahmadinejad normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rt normalized weight is 	0.005847953216374269 0.9941520467836257 0.0
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/train/output_5_1_t.arff
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - FINAL(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - FINAL(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	144.0	, and accuracy is 	0.5333333333333333
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:383) - current period classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 21:58:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:386) - 270	53.333333333333336%	43.0	20.0	7.0	39.0	93.0	28.0	9.0	13.0	7.0
+[2016-01-04 21:58:42 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:430) - algorithm stop
+[2016-01-04 21:58:42 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:29) - Adaptivecotrain algorithm stop
+[2016-01-04 22:01:18 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:26) - now parsing xml file...
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:210) - parsing XML configuration file success
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:24) - Adaptivecotrain algorithm start
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:62) - parameter numTopKTestData2TrainSet:	5	parameter classifyResultThreshold:	0.5	parameter maxIteration:	2	parameter numTopKPrivateWord:	20
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:82) - dayNo 1:	test dataset, select testData to TrainDataSet
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:84) - train classifier using train data
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 1
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t0.arff
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	159.0	, and accuracy is 	0.6652719665271967
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 239	66.52719665271967%	8.0	3.0	3.0	25.0	147.0	26.0	4.0	4.0	4.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	159.0	, and accuracy is 	0.6652719665271967
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 239	66.52719665271967%	8.0	3.0	3.0	25.0	147.0	26.0	4.0	4.0	4.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	153.0	, and accuracy is 	0.6401673640167364
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 239	64.01673640167364%	0.0	1.0	0.0	37.0	153.0	33.0	0.0	0.0	0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 3
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 4
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 5
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 2
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t1.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	161.0	, and accuracy is 	0.6736401673640168
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 239	67.36401673640168%	10.0	3.0	3.0	23.0	147.0	26.0	4.0	4.0	4.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	161.0	, and accuracy is 	0.6736401673640168
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 239	67.36401673640168%	10.0	3.0	3.0	23.0	147.0	26.0	4.0	4.0	4.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	153.0	, and accuracy is 	0.6401673640167364
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 239	64.01673640167364%	0.0	1.0	0.0	37.0	153.0	33.0	0.0	0.0	0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 6
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 7
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 8
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 9
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 10
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thread normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word post-debate normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ah normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word whoever normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pin normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tom normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word web normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drudge normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heh normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ahmadinejad normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rt normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/train/output_5_1_t.arff
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - FINAL(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - FINAL(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:383) - current period classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:01:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:386) - 239	67.78242677824268%	12.0	3.0	3.0	23.0	146.0	26.0	2.0	5.0	4.0
+[2016-01-04 22:01:22 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:430) - algorithm stop
+[2016-01-04 22:01:22 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:29) - Adaptivecotrain algorithm stop
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:26) - now parsing xml file...
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:210) - parsing XML configuration file success
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:24) - Adaptivecotrain algorithm start
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:62) - parameter numTopKTestData2TrainSet:	5	parameter classifyResultThreshold:	0.5	parameter maxIteration:	2	parameter numTopKPrivateWord:	20
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:82) - dayNo 1:	test dataset, select testData to TrainDataSet
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:84) - train classifier using train data
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 1
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t0.arff
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:02:19 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 239	67.78242677824268%	1.0	2.0	0.0	7.0	154.0	32.0	0.0	4.0	5.0
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 239	67.78242677824268%	1.0	2.0	0.0	7.0	154.0	32.0	0.0	4.0	5.0
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 239	67.78242677824268%	0.0	0.0	0.0	8.0	162.0	37.0	0.0	0.0	0.0
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 4
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 5
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 6
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 2
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t1.arff
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:02:20 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	163.0	, and accuracy is 	0.6820083682008368
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 239	68.20083682008368%	1.0	2.0	1.0	7.0	154.0	31.0	0.0	4.0	5.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	163.0	, and accuracy is 	0.6820083682008368
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 239	68.20083682008368%	1.0	2.0	1.0	7.0	154.0	31.0	0.0	4.0	5.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 239	67.78242677824268%	0.0	0.0	0.0	8.0	162.0	37.0	0.0	0.0	0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 7
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 8
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 9
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 12
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 13
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thread normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word post-debate normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ah normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word whoever normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pin normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tom normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word web normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drudge normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heh normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ahmadinejad normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rt normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:21 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/train/output_5_1_t.arff
+[2016-01-04 22:02:22 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:22 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:22 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - FINAL(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:22 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - FINAL(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:22 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:383) - current period classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:22 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:386) - 239	67.78242677824268%	3.0	4.0	1.0	5.0	146.0	27.0	0.0	10.0	9.0
+[2016-01-04 22:02:23 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:430) - algorithm stop
+[2016-01-04 22:02:23 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:29) - Adaptivecotrain algorithm stop
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:26) - now parsing xml file...
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:210) - parsing XML configuration file success
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:24) - Adaptivecotrain algorithm start
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:62) - parameter numTopKTestData2TrainSet:	5	parameter classifyResultThreshold:	0.5	parameter maxIteration:	2	parameter numTopKPrivateWord:	20
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:82) - dayNo 1:	test dataset, select testData to TrainDataSet
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:84) - train classifier using train data
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 1
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t0.arff
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 239	67.78242677824268%	3.0	4.0	1.0	5.0	146.0	27.0	0.0	10.0	9.0
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:38 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 239	67.78242677824268%	3.0	4.0	1.0	5.0	146.0	27.0	0.0	10.0	9.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 239	67.78242677824268%	0.0	0.0	0.0	8.0	162.0	37.0	0.0	0.0	0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 5
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 6
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 8
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 2
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t1.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	161.0	, and accuracy is 	0.6736401673640168
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 239	67.36401673640168%	3.0	4.0	1.0	5.0	144.0	27.0	0.0	10.0	9.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	161.0	, and accuracy is 	0.6736401673640168
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 239	67.36401673640168%	3.0	4.0	1.0	5.0	144.0	27.0	0.0	10.0	9.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	162.0	, and accuracy is 	0.6778242677824268
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 239	67.78242677824268%	0.0	0.0	0.0	8.0	162.0	37.0	0.0	0.0	0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 9
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 13
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 15
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 16
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 19
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thread normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word post-debate normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ah normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word whoever normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pin normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tom normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word web normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drudge normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heh normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ahmadinejad normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rt normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/train/output_5_1_t.arff
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - FINAL(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - FINAL(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	160.0	, and accuracy is 	0.6694560669456067
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:383) - current period classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:02:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:386) - 239	66.94560669456067%	3.0	4.0	1.0	5.0	144.0	27.0	0.0	10.0	9.0
+[2016-01-04 22:02:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:430) - algorithm stop
+[2016-01-04 22:02:41 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:29) - Adaptivecotrain algorithm stop
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:26) - now parsing xml file...
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:210) - parsing XML configuration file success
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:24) - Adaptivecotrain algorithm start
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:62) - parameter numTopKTestData2TrainSet:	5	parameter classifyResultThreshold:	0.5	parameter maxIteration:	2	parameter numTopKPrivateWord:	20
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:82) - dayNo 1:	test dataset, select testData to TrainDataSet
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:84) - train classifier using train data
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 1
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t0.arff
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	117.0	, and accuracy is 	0.7005988023952096
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:39 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 167	70.05988023952095%	2.0	8.0	2.0	15.0	113.0	14.0	0.0	3.0	2.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	117.0	, and accuracy is 	0.7005988023952096
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 167	70.05988023952095%	2.0	8.0	2.0	15.0	113.0	14.0	0.0	3.0	2.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	125.0	, and accuracy is 	0.7485029940119761
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 167	74.8502994011976%	0.0	0.0	0.0	17.0	125.0	18.0	0.0	0.0	0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 3
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 5
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 6
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 2
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	output_5_1_t.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/output_5_1_t.arff into text feature non-text feature file
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	output_5_1_t1.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	120.0	, and accuracy is 	0.718562874251497
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 167	71.8562874251497%	3.0	7.0	2.0	14.0	115.0	14.0	0.0	2.0	2.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	120.0	, and accuracy is 	0.718562874251497
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 167	71.8562874251497%	3.0	7.0	2.0	14.0	115.0	14.0	0.0	2.0	2.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	125.0	, and accuracy is 	0.7485029940119761
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 167	74.8502994011976%	0.0	0.0	0.0	17.0	125.0	18.0	0.0	0.0	0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 4
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 7
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 8
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 10
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 11
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word god normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thread normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word post-debate normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ah normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word whoever normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pin normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tom normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word web normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drudge normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heh normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ahmadinejad normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rt normalized weight is 	0.0 1.0 0.0
+[2016-01-04 22:03:40 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/train/output_5_1_t.arff
+[2016-01-04 22:03:41 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:41 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:41 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - FINAL(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/output_5_00.arff
+[2016-01-04 22:03:41 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - FINAL(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	119.0	, and accuracy is 	0.7125748502994012
+[2016-01-04 22:03:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:383) - current period classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2016-01-04 22:03:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:386) - 167	71.25748502994011%	2.0	7.0	2.0	15.0	114.0	14.0	0.0	4.0	2.0
+[2016-01-04 22:03:42 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:430) - algorithm stop
+[2016-01-04 22:03:42 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:29) - Adaptivecotrain algorithm stop

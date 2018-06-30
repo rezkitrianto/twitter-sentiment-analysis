@@ -1,0 +1,568 @@
+[2015-12-15 10:39:40 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:26) - now parsing xml file...
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.config.ConfigReader:210) - parsing XML configuration file success
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:24) - Adaptivecotrain algorithm start
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:62) - parameter numTopKTestData2TrainSet:	5	parameter classifyResultThreshold:	0.5	parameter maxIteration:	2	parameter numTopKPrivateWord:	20
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:82) - dayNo 1:	test dataset, select testData to TrainDataSet
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:84) - train classifier using train data
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 1
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	trainfile.arff
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/trainfile.arff into text feature non-text feature file
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	testfile0.arff
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2015-12-15 10:39:41 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2015-12-15 10:39:44 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:39:44 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:39:45 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	1254.0	, and accuracy is 	0.3917525773195876
+[2015-12-15 10:39:45 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:39:45 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 3201	0.3917525773195876	136.0	102.0	99.0	65.0	154.0	160.0	640.0	881.0	964.0
+[2015-12-15 10:39:47 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:39:47 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:39:48 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	1235.0	, and accuracy is 	0.3858169322086848
+[2015-12-15 10:39:48 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:39:48 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 3201	0.3858169322086848	173.0	121.0	128.0	592.0	919.0	952.0	76.0	97.0	143.0
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	1226.0	, and accuracy is 	0.3830053108403624
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 3201	0.3830053108403624	7.0	14.0	4.0	0.0	0.0	0.0	834.0	1123.0	1219.0
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1031
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2049
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2560
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2563
+[2015-12-15 10:39:49 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 3077
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:105) - Iteration 2
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:107) - train data set:	trainfile.arff
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:109) - update private words weight in train file:	
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:115) - split train data set feature into text and non-text feature, and then train classifier respectively
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.CotrainingFrame:34) - split data/train/trainfile.arff into text feature non-text feature file
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:133) - test data set:	testfile1.arff
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:134) - update private word weight in test data set:	
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:139) - update initial train data set	
+[2015-12-15 10:39:50 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:287) - no more private word weight to update
+[2015-12-15 10:39:52 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:39:52 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:39:53 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - COMBINE(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	1253.0	, and accuracy is 	0.39144017494532957
+[2015-12-15 10:39:53 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:159) - combine classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:39:53 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:162) - 3201	0.39144017494532957	158.0	116.0	111.0	72.0	165.0	182.0	611.0	856.0	930.0
+[2015-12-15 10:39:54 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:39:54 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - Text classifier classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:39:55 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - Text classifier classify result:	 num of classify right is 	1229.0	, and accuracy is 	0.3839425179631365
+[2015-12-15 10:39:55 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:201) - text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:39:55 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:204) - 3201	0.3839425179631365	156.0	111.0	117.0	608.0	928.0	961.0	77.0	98.0	145.0
+[2015-12-15 10:39:56 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:39:56 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - NONTEXT CLASSIFER classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - NONTEXT CLASSIFER classify result:	 num of classify right is 	1226.0	, and accuracy is 	0.3830053108403624
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:236) - non-text classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:239) - 3201	0.3830053108403624	7.0	14.0	4.0	0.0	0.0	0.0	834.0	1123.0	1219.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:131) - augmenting tweet ids
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 14
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 614
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1038
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 1548
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2573
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 2586
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.classify.SemiSupervised:133) - 3086
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word 2004 normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word web normalized weight is 	1.0 0.0 0.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rt normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word experience normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word join normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word biden's normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word game normalized weight is 	1.0 0.0 0.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word 12 normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word each normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word falling normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word work normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word because normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word take normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pt normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word language normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word came normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pay normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mcpain normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word loopholes normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word times normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word working normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word results normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word oh normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word obamas normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word dems normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word step normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word stuttering normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bastards normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word live normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word moderator normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tweeters normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word gop normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word blah normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word enemies normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word kids normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word decide normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word domestic normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thay normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word senate normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word republicans normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word gotta normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word stay normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hiding normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word democracies normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word man normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pull normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heck normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mcc normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word eloquent normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hashtag normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tie normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word barack normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word can normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word admits normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word knew normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word kinda normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word americans normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word proposed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word president normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bailout normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word nations normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pissing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pulling normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word iran normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word reagan's normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ants normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word govt normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word biden normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word loses normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word corporate normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word judgment normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word programs normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word very normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word senator normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word blunders normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word failed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word funding normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word supporters normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word failure normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word opposing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word holding normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word presidential normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word debates normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word cnn normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word iraq normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word troops normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word lying normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word allies normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word priorities normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word claims normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wins normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thats normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ratings normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word blood normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word specific normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word moment normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word idiot normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mcsame normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word plans normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word enjoyed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tax normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word running normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word voting normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word claim normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word kicked normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word believes normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mclame normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word terrorist normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word reaction normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word anthem normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word terrorism normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word vote normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word asked normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word lack normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word elected normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word failing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bible normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word broke normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rule normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word victory normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word polls normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word spending normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word debate normalized weight is 	0.03333333333333333 0.0 0.9666666666666666
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word sen normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thinks normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word shit normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fail normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word qaeda normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bush normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word showed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word nearly normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word diplomacy normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word clinton normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word treated normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word preconditions normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word infrastructure normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pushed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ahead normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word addressing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word candidates normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word average normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tonight normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word speech normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word writing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word supposed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word laughing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word stood normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drinking normalized weight is 	1.0 0.0 0.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word attacking normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word crap normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word america's normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word happened normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word foreign normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drugs normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ending normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word earmarking normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word discuss normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word uh normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word talked normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word followed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word substance normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word calling normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word dollars normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word strategic normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word supported normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word missile normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word monitor normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word afford normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word starting normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word financial normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word democrat normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:57 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word adult normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word declare normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word policies normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word trouble normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mistakes normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word late normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word defense normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heads normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pakistan normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word everytime normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word far normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word points normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word scoring normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word putting normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word spin normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word keeping normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word interview normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mostly normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word grandpa normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word war normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word kept normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hero normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word huh normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mistake normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word speak normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word saying normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word veterans normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word guard normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word prez normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word defensive normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hack normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ground normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pow normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word brings normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bringing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word parties normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ouch normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word probably normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word study normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word issue normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word graph normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word asking normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wants normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mouth normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word opinions normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fucking normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word sheesh normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word keeps normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rocks normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word peace normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word existential normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word soldier normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word yup normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word 3rd normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word itself normalized weight is 	1.0 0.0 0.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word looked normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word seal normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word break normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word missed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word playing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word commentary normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bill normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word spend normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word laugh normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fp normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fashion normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bear normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word boy normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word match normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word cut normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word background normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word freedom normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word swayed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word figure normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word heal normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word macain normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mentions normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word values normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word candidate normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word dang normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word watching normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tone normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word feed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word looks normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word loves normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word turned normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fix normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word patronizing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word crazy normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word felt normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word leader normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word gave normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hillary normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word audience normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word lehrer normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word sense normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word worked normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word pres normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word personally normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word lol normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word letting normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word sitting normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word direct normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word independents normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wait normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word everywhere normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word baby normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word quote normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word kidding normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wondering normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word channel normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word shot normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wanting normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word jim normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word channels normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word format normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word overall normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word topics normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word board normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word lots normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word turf normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word stuck normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word during normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word absolutely normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word priority normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word feels normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word smiles normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word explaining normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word result normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word any normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word subject normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tea normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rudy normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word says normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word code normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ones normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word middle normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wow normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word started normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hd normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word name normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word those normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word same normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word body normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word taken normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word dc normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word term normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word bottom normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word over normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word some normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wounds normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word hear normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word successes normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word end normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word gets normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word screen normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word half normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word anyone normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word comes normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word vp normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word mins normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word inside normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word anything normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word together normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word policy normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ok normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word doing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word almost normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word thought normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word koreans normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word short normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word team normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word today normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word order normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word vs normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word twitter normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word seems normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word until normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word stop normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word year normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word possible normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ball normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word father normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word way normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word such normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word look normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word arguing normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word years normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word fact normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word edge normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word after normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word looking normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word add normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word little normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word compare normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word having normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word walking normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word job normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word tv normalized weight is 	0.5 0.0 0.5
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word position normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word against normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word wanna normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word send normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word this normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word sure normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word public normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word talk normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word us normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word dont normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word said normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word night normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word on normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word again normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word win normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word was normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word last normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word here normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word help normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word 2 normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word feeling normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word american normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word should've normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word current normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word impressed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word country normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word business normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word issues normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word respond normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word next normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word other normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word doesnt normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word there normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word die normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word him normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word could normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word program normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word happen normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word seemed normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word been normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word were normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word say normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word much normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word supports normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word while normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word that normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word takes normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word didnt normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word only normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word full normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word along normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word china normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word days normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word future normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word most normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word deal normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word world normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word off normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word using normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word spain normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word four normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word power normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word had normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word am normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word these normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word view normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word ideas normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word number normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word coming normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word cost normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word track normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word point normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word every normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word class normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word david normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word others normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word part normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word white normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word people normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word in normalized weight is 	0.022727272727272714 0.0 0.9772727272727273
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word im normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word recent normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word would normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word family normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word control normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word u normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word sounds normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word won normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word one normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word become normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word rate normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word or normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word many normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word make normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word better normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word house normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word time normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word needs normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word we normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word play normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word credit normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word camera normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word past normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word south normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word college normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word own normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word himself normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word got normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word car normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word un normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word let normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word drill normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word plan normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word air normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:241) - non-public word yet normalized weight is 	0.0 0.0 1.0
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/train/trainfile.arff
+[2015-12-15 10:39:58 INFO ] [main] (com.ict.sentimentclassify.feature.FeatureUtil:292) - feature file to update:	data/test/day1/testfile0.arff
+[2015-12-15 10:40:01 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:33) - classify test data :	data/test/day1/testfile0.arff
+[2015-12-15 10:40:01 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:52) - FINAL(TEXT+NONTEXT) CLASSIFIER classify testData	data/test/day1/testfile0.arff
+[2015-12-15 10:40:02 INFO ] [main] (com.ict.sentimentclassify.classifier.SMOClassifier:101) - FINAL(TEXT+NONTEXT) CLASSIFIER classify result:	 num of classify right is 	1241.0	, and accuracy is 	0.38769134645423303
+[2015-12-15 10:40:02 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:383) - current period classifier classify result [numTestData accuracy tPositive fPositiveNeutral fPositiveNegative fNeutralPositive tneutral fNeutralNegative fNegativePositve fNegativeNeutral tNegative]
+[2015-12-15 10:40:02 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:386) - 3201	0.38769134645423303	159.0	95.0	109.0	566.0	846.0	878.0	116.0	196.0	236.0
+[2015-12-15 10:40:26 INFO ] [main] (com.ict.sentimentclassify.classify.AdaptivecotrainClassify:430) - algorithm stop
+[2015-12-15 10:40:26 INFO ] [main] (com.ict.sentimentclassify.application.AdaptivecotrainMain:29) - Adaptivecotrain algorithm stop

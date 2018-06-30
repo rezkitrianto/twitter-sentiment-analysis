@@ -1,0 +1,20 @@
+parameter numTopKTestData2TrainSet:	5
+parameter classifyResultThreshold:	0.5
+parameter maxIteration:	2
+parameter numTopKPrivateWord:	20
+Iteration Result:	NumTestData:	accuracy	precision	recall
+period 1	iteration 0	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	number of train data 389	number of test data 167
+period 1	iteration 0	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 167	accuracy 70.05988023952095%	average precision 0.4541471048513302	average recall 0.38001616417176187
+period 1	iteration 0	classifier Text classifier	number of train data 389	number of test data 167
+period 1	iteration 0	classifier Text classifier	classify result: num of test data 167	accuracy 70.05988023952095%	average precision 0.4541471048513302	average recall 0.38001616417176187
+period 1	iteration 0	classifier NONTEXT CLASSIFER	number of train data 389	number of test data 167
+period 1	iteration 0	classifier NONTEXT CLASSIFER	classify result: num of test data 167	accuracy 74.8502994011976%	average precision 0.78125	average recall 0.3333333333333333
+period 1	iteration 1	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	number of train data 394	number of test data 167
+period 1	iteration 1	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 167	accuracy 71.8562874251497%	average precision 0.5180652680652681	average recall 0.40500035139503826
+period 1	iteration 1	classifier Text classifier	number of train data 394	number of test data 167
+period 1	iteration 1	classifier Text classifier	classify result: num of test data 167	accuracy 71.8562874251497%	average precision 0.5180652680652681	average recall 0.40500035139503826
+period 1	iteration 1	classifier NONTEXT CLASSIFER	number of train data 394	number of test data 167
+period 1	iteration 1	classifier NONTEXT CLASSIFER	classify result: num of test data 167	accuracy 74.8502994011976%	average precision 0.78125	average recall 0.3333333333333333
+period 1	iteration 2	classifier FINAL(TEXT+NONTEXT) CLASSIFIER	number of train data 399	number of test data 167
+period 1	iteration 2	classifier FINAL(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 167	accuracy 71.25748502994011%	average precision 0.4374514374514374	average recall 0.38025272331154686
+ 

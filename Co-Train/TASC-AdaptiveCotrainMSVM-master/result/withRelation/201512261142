@@ -1,0 +1,14 @@
+parameter numTopKTestData2TrainSet:	5
+parameter classifyResultThreshold:	0.5
+parameter maxIteration:	2
+parameter numTopKPrivateWord:	20
+Iteration Result:	NumTestData:	accuracy	precision	recall
+period 1	iteration 0	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	number of train data 282	number of test data 154
+period 1	iteration 0	classifier COMBINE(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 154	accuracy 0.0	average precision NaN	average recall NaN
+period 1	iteration 0	classifier Text classifier	number of train data 282	number of test data 154
+period 1	iteration 0	classifier Text classifier	classify result: num of test data 154	accuracy 0.0	average precision NaN	average recall NaN
+period 1	iteration 0	classifier NONTEXT CLASSIFER	number of train data 282	number of test data 154
+period 1	iteration 0	classifier NONTEXT CLASSIFER	classify result: num of test data 154	accuracy 0.0	average precision NaN	average recall NaN
+period 1	iteration 0	classifier FINAL(TEXT+NONTEXT) CLASSIFIER	number of train data 282	number of test data 154
+period 1	iteration 0	classifier FINAL(TEXT+NONTEXT) CLASSIFIER	classify result: num of test data 154	accuracy 0.0	average precision NaN	average recall NaN
+ 

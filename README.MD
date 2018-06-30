@@ -1,0 +1,39 @@
+Sequence of Process
+
+1. Feature Extraction Process
+Input : 
+	resultText.txt -> processed tweets from sanders database
+Output : 
+	all divided files in folder /dataExtracted -> the file in libsvm and weka format that has been divided into training and testing part
+
+The FeatureExtraction is use to extract feature from the tweet, this will be resulted as the splitted file in format libSVM and Weka.
+Run the file in /dist directory :
+	java -jar /dist/FeatureExtraction.jar
+
+The result will be splitted into 
+	a. dataExtracted/forLibSVM that will be used for the LibSVM library for test in the MSVM classifier
+	b. dataExtracted/forCoTraining that will be used for the baseline that use the Co-Training algorithm with SMO as the classifier
+	c. dataExtracted/oneTopic for experiment using oneTopic in the division of data training:testing = 70:30
+
+
+For the libSVM, Copy the data training and testing to your own directory, and run the libSVM library to predict the class and accuracy.
+For the Co-train, Copy the training data into folder data/train and rename it to output_5_1_t.arff
+For the testing data, copy the testing data into folder data/test/day1 and rename it to output_5_1_t.arff and output_5_00.arff
+
+
+2. Using libSVM format data from Feature Extraction to do classifier by implementing libSVM
+Use this parameter that has been tuned in libSVM for this data:
+c = 2.0
+g = 0.03125
+
+
+3. Using Weka format data from Feature Extraction to do classifier by implementing Co Training
+
+Input : 
+	data training : output_5_1_t.arff
+	data testing : output_5_1_t.arff and output_5_00.arff
+
+Output :
+	accuracy of the predicted sentiment of tweets
+
+4. Using libSVM format data from Feature Extraction to do classifier by implementing Neural Network Caffe
